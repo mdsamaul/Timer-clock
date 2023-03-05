@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clock demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      .timer-section {
+        width: 75%;
+        height: 575px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container text-center my-5">
+        <h1>Timer</h1>
+      </div>
+    </header>
+    <main>
+      <section
+        class="timer-section d-flex justify-content-center align-items-center container overflow-visible bg-body-secondary border-2"
+      >
+        <div class="text-center">
+          <div
+            class="my-5 d-flex gap-2 justify-content-center align-items-center"
+          >
+            <h1
+              id="num-count-hour"
+              class="display-1 px-2 border border-1 border-primary"
+            >
+              00
+            </h1>
+            <h1 class="display-1 px-0">:</h1>
+            <h1
+              id="num-count-minit"
+              class="display-1 px-2 border border-1 border-primary"
+            >
+              00
+            </h1>
+            <h1 class="display-1">:</h1>
+            <h1
+              id="num-count-secent"
+              class="display-1 px-2 border border-1 border-primary"
+            >
+              00
+            </h1>
+          </div>
+          <div>
+            <button
+              id="timer-btn"
+              type="button"
+              class="btn btn-outline-danger px-5"
+            >
+              Go to Timer
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
